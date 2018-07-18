@@ -1,0 +1,198 @@
+header{
+  background-image : url(background.png);
+  background-color : #cccccc;
+  font-size : 40pt;
+  text-align : center;
+  margin-top :-1.5cm;
+  margin-bottom : -1.5cm;
+  color: white;
+}/*header배경설정, 글씨는 흰색*/
+.joinus {
+  color : lightgrey;
+}
+.home{
+  color: lightgrey;
+}
+ul {/*여기부터는 dropdown box*/
+    list-style-type: none;
+    margin: 0;
+    padding: 0cm;
+    overflow: hidden;
+    background-color: white;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 0px 39px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: grey;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    display: block;
+    text-align: center;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}/*여기까지 dropdown */
+.current{/*현재 있는 곳의 메뉴글씨에 그림자를 부여*/
+  text-shadow: 2px 2px 8px grey
+}<!--shadow-->
+hr{
+  width : 2px;
+}
+footer{/*footer부분 배경을 그라데이션으로 설정*/
+  background: linear-gradient(to bottom, #666699 0%, #337799 100%);
+}
+footer p{
+  font-size : 12pt;
+  border-bottom-style: solid;
+  border-color : #483D8B;
+  border-width :20%;
+  margin-left : 1cm;
+  margin-right: 1cm;
+  margin-top : -2px;
+  margin-bottom :-2px;
+}
+s{
+  color : #cc6699;
+}
+.imagestyle{
+  width :50%;
+  min-width:10cm;
+  height : 450px;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.speimage{
+  width: 50%;
+  min-width:9cm;
+  height:400px;
+  margin :auto;
+}
+.specimage{
+  width: 65%;
+  min-width:9cm;
+  display :block;
+  margin: 0 auto;
+  margin-top: 0.8cm;
+  margin-bottom: 0.8cm;
+}
+figure hr{
+   width : 50%;
+   min-width: 10cm;
+}
+figure{
+  margin-bottom: 1cm;
+}
+figcaption{
+  text-align: center;
+}
+.buybutton{
+  background-color: dimgrey;
+  color: white;
+  padding: 10px 30px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+}
+article{
+  position : absolute;
+  left:20cm;
+  top : 8cm;
+}
+aside p{
+  text-align: center;
+  font-family: 굴림;
+}
+.specbuy{
+  position:absolute;  top:0px; right:30px;
+}
+@media only screen and (min-width: 800px) {
+    /* For pc*/
+  [class="specbuy"]{
+    position:absolute;  top:8cm; left:60%;
+  }
+  h1{
+    font-size: 80pt;
+  }
+  [class="joinus"]{
+    font-size:20pt;}
+  [class="home"]{
+      font-size:20pt;}
+  ul{
+    margin-left : 20%;
+  }
+}
+@media only screen and (max-width: 800px) {
+    /* For tablet: */
+  [class="specbuy"]{
+    position:static;
+    margin-left : 2cm;
+    margin-right: 2cm;
+  }
+  h1{
+    font-size: 40pt;
+    padding-top: 1cm;
+    padding-bottom: 1.5cm;
+    margin-bottom: 1cm;
+  }
+  [class="joinus"]{
+    font-size:15pt;}
+  [class="home"]{
+      font-size:15pt;}
+  ul{
+    margin-top: 0.5cm;
+    margin-left:0cm;
+  }
+}
+@media only screen and (max-width: 600px) {
+    /* For mobile phones: */
+  [class="specbuy"]{
+    position:static;
+    margin-left : 0cm;
+    margin-right: 0cm;
+  }
+  h1{
+    font-size: 40pt;
+    padding-top: 1cm;
+    padding-bottom: 1.5cm;
+    margin-bottom: 1cm;
+  }
+  [class="joinus"]{
+    font-size:15pt;}
+  [class="home"]{
+      font-size:15pt;}
+  ul{
+    margin-top: 0.5cm;
+    margin-left:0cm;
+  }
+}

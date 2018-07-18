@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>YOUR SHOES</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type = "text/css" href="basicstyle.css"/>
+	<!--linking external style sheet-->
+  <style>
+  .aboutme{
+    text-decoration: underline;
+    -moz-text-decoration-color: red; /* Code for Firefox */
+    text-decoration-color: red;
+  }
+  .hide{/*가려주고 있는 INTEREST RATE 써있는 박스*/
+    width :100%;
+    background: grey;
+    color:white;
+    height:60px;
+    margin:auto;
+    text-align :center;
+    font-size: 15pt;
+    transition: width 2s;
+    float :left;
+  }
+  .hiding{/*아래에 가려진 100%, 60%*/
+    color: black;
+    font-weight:bold;
+    position : absolute;
+    z-index:-1;
+  }
+  .hide:hover{
+    width: 30%;
+  }
+  .sec2{/*섹션2 들어가는 부분 서식*/
+    font-size:20pt; text-align:center; border-style: dotted;
+    margin:auto; font-family: inherit;
+  }
+  .eximag{
+    display: block;
+    margin: auto;
+  }
+  .explain{
+    font-size:13pt;
+  }
+  @media only screen and (min-width: 800px) {
+      /* For pc*/
+    [class="tablee"]{
+      width:720px;
+    }
+    [class="hiding"]{
+      margin-left : 19%;
+      font-size:30pt;
+      margin-top : 0.2cm;
+    }
+    [class ="aboutpic"]{
+      width:360px;
+    }
+    [class="sec2"]{
+      width: 60%;
+    }
+    [class="eximag"]{
+      width: 600px;
+    }
+    [class="explain"]{
+      margin-left: 40%;
+    }
+  }
+  @media only screen and (max-width: 800px) {
+      /* For tablet: */
+      [class="tablee"]{
+        width:580px;
+      }
+      [class="hiding"]{
+        margin-left : 5cm;
+        font-size:25pt;
+        margin-top : 0.2cm;
+      }
+      [class ="aboutpic"]{
+        width:280px;
+      }
+      [class="sec2"]{
+        width: 80%;
+      }
+      [class="eximag"]{
+        width: 400px;
+      }
+      [class="explain"]{
+        margin-left:30%;
+      }
+  }
+  @media only screen and (max-width: 600px) {
+      /* For mobile phones: */
+      [class="tablee"]{
+        width:350px;
+      }
+      [class="hiding"]{
+        margin-left : 3cm;
+        font-size:15pt;
+        margin-top : 0.6cm;
+      }
+      [class ="aboutpic"]{
+        width:175px;
+      }
+      [class="sec2"]{
+        width: 90%;
+      }
+      [class="eximag"]{
+        width: 500px;
+      }
+      [class="explain"]{
+        margin-left:10%;
+      }
+  }
+  </style> <!--text decoration-->
+</head>
+<body>
+  <header>
+		<h1>YOUR SHOES</h1>
+    <p style = "position:absolute;  top:0px; right:30px">
+    <a class = "joinus" href="joinus.html" role="button">
+      JOIN US</a></p>
+    <p style = "position:absolute;  top:0px; left:30px">
+    <a class = "home" href="index.html" role="button">
+      HOME</a></p>
+	</header>
+  <ul>
+	  <li class="current"><a href="aboutus.html">ABOUT US</a></li>
+	  <li class="dropdown">
+	    <a href="javascript:void(0)" class="dropbtn">HEEL ▼</a>
+	    <div class="dropdown-content">
+        <nav>
+	      <a href="heel(미들힐).html">미들힐(1~7cm)</a>
+	      <a href="heel(하이힐).html">하이힐(8~9cm)</a>
+	      <a href="heel(킬힐).html">킬힐(10cm~)</a>
+      </nav><!--navigation-->
+	    </div>
+	 	<li><a href="sneakers.html">SNEAKERS</a></li>
+	</ul>
+  <hr>
+  <section id ="1"><br>
+  <table class="tablee" style="margin-left:auto; margin-right:auto">
+    <caption ><h2 class="aboutme"><strong>ABOUT ME</strong></h2></caption>
+    <thead>
+      <tr><th colspan="2"> <br></th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>
+          <img class ="aboutpic" src="프사.jpg"
+          alt="profile picture of me">
+        </th>
+        <th style="font-size:15pt">name : 김조현 <br><br> major : computer science <br><br>Age : 21</th>
+      </tr>
+      <tr>
+        <td colspan="2" style ="font-size : 15pt;text-align :center"><br><strong>ABOUT MY ACTIVITY</strong> <br></td>
+      </tr>
+      <tr>
+        <td>
+          <img class ="aboutpic" src="댄동.jpg" alt="댄스동아리 사진">
+        </td>
+        <td>
+          <img class ="aboutpic" src="힙합.jpg" alt="힙합동아리 사진">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="hide"><span>INTEREST RATE</span></p>
+          <p class="hiding">100%</p>
+
+        </td>
+        <td>
+          <p class="hide"><span>INTEREST RATE</span></p>
+          <p class="hiding">60%</p>
+        </td>
+      </tr>
+      <tr><td colspan="2" style ="font-size : 30pt"><br></td></tr>
+    </tbody>
+  </table>
+  </section>
+  <section id="2">
+    <h3 class="sec2"><span style="font-weight:lighter">Features of </span>YOUR SHOES<span style="font-weight:lighter">'s Page</span></h3><br style ="font-size : 20pt">
+    <hr style="width:80%">
+    <p style="text-align:center; font-size:20pt; font-style:italic">Other websites</p>
+    <img class ="eximag" src="ex.jpg" alt="other website's picture">
+    <p class="explain">△ too much information</p>
+    <p class="explain">△ cannot concentrate on item</p><hr  style="width:80%"><br><hr style="width:80%">
+    <p style="text-align:center; font-size:20pt; font-style:italic">Our website [YOUR SHOES] has</p>
+    <img class ="eximag" src="our.png" alt="our website's picture">
+    <p class="explain">△ simple design</p>
+    <p class="explain">△ at most two items in one row</p>
+    <p class="explain">△ help concentrate on item</p><hr style="width:80%"><br style ="font-size : 20pt">
+  </section>
+
+  <footer><br>
+    <p style ="font-weight :bold;font-size : 15pt">COMPANY INFO</p><!--font weight-->
+    <p >COMPANY (주)YOURSHOES</p>
+    <p >COPYRIGHT&copy; 2017 YOURSHOES. ALL RIGHTS RESERVED</p><!--special character-->
+    <p >TEL : 02-6232-9454</p><br>
+  </footer>
+</body>
+</html>

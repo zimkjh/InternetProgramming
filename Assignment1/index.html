@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<head>
+
+	<title>YOUR SHOES</title>
+	<meta charset="utf-8">
+
+	<style>
+		.joinus {color : lightgrey}
+		.menu {color: black}
+		ul {/*여기부터 dropdown 박스*/
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+				background-color: #333;
+		}
+
+		li {
+				float: left;
+		}
+
+		li a, .dropbtn {
+				display: inline-block;
+				color: white;
+				text-align: center;
+				padding: 14px 36px;
+				text-decoration: none;
+		}
+
+		li a:hover, .dropdown:hover .dropbtn {
+				background-color: grey;
+		}
+
+		li.dropdown {
+				display: inline-block;
+		}
+
+		.dropdown-content {
+				display: none;
+				position: absolute;
+				background-color: #f9f9f9;
+				min-width: 160px;
+				box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+				z-index: 1;
+		}
+
+		.dropdown-content a {
+				color: black;
+				padding: 12px 16px;
+				text-decoration: none;
+				display: block;
+				text-align: left;
+		}
+
+		.dropdown-content a:hover {background-color: #f1f1f1}
+
+		.dropdown:hover .dropdown-content {
+				display: block;
+		}/*여기까지 dropdown 박스*/
+	.newspaper {/*신문처럼 2단락으로 나눔*/
+	    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+	    -moz-column-count: 2; /* Firefox */
+	    column-count: 2;
+
+	    -webkit-column-gap: 0.5cm; /* Chrome, Safari, Opera */
+	    -moz-column-gap: 0.5cm; /* Firefox */
+	    column-gap: 0.5cm;
+
+	    -webkit-column-rule: 2px outset black; /* Chrome, Safari, Opera */
+	    -moz-column-rule: 2px outset black; /* Firefox */
+	    column-rule: 2px outset black;
+	}
+		hr{
+			width : 80%;
+		}
+		s{
+			color : #cc6699;
+		}
+
+		p.foot {
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-bottom-style: solid;
+    border-left-style: hidden;
+		border-color : #483D8B;
+		border-width :20%;
+		margin-left : 1cm;
+		margin-right: 20cm;
+		}
+		@-webkit-keyframes banner {
+	    0%   {color:red; left:0px; top:0px;}
+	    50%  {color:blue; left:300px; top:300px;}
+	    100% {color:red; left:0px; top:0px;}
+		}
+
+		/* animation */
+		@keyframes banner {
+		    0%   {color:red; left:0px; top:0px;}
+		    50%  {color:yellow; left:30px; top:30px;}
+		    100% {color:red; left:0px; top:0px;}
+		}
+		.animate {
+    font-size:30pt;
+    font-weight: bold;
+    position: relative;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-name: banner;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    /* Standard syntax */
+    animation-name: banner;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+		}
+		@media only screen and (min-width: 800px) {
+		    /* For pc*/
+			[class="title"]{
+				font-size: 80pt;
+			}
+			[class="hereimage"]{
+				width:10cm; height: 8cm;
+			}
+		}
+		@media only screen and (max-width: 800px) {
+		    /* For tablet: */
+	    [class="newspaper"] {
+        width: 100%;
+				column-count: 1;
+	    }
+			[class="title"]{
+				margin-left: -7cm;
+				font-size: 50pt;
+			}
+			[class="hereimage"]{
+				width:14cm; height: 12cm;
+			}
+		}
+		@media only screen and (max-width: 600px) {
+		    /* For mobile phones: */
+	    [class="newspaper"] {
+	        width: 100%;
+					column-count: 1;
+	    }
+			[class="title"]{
+				margin-left: -7cm;
+				font-size: 40pt;
+			}
+			[class="hereimage"]{
+				width:9cm; height: 7cm;
+			}
+		}
+		.title{
+			position : absolute; top : 60px; left: 300px;
+				z-index: 1; color : white; font-family:verdana, arial, sans-serif;
+		}
+	</style>
+	<!--embedded style sheet-->
+
+</head>
+<body>
+	<header style="background-image : url(0000.jpg); background-size: 100% 400px">
+			<img src="0000.jpg" alt="메인 구두사진" height="450">
+		<p style = "position:absolute; z-index: 2; font-size: 20pt;
+			top:10px; right: 50px">
+			<a class = "joinus" href="joinus.html" role="button">
+				JOIN US</a></p>
+		<p class="title">YOUR SHOES</p>
+	</header><br>
+	<ul style="position: static">
+	  <li><a href="aboutus.html">ABOUT US</a></li>
+	  <li class="dropdown">
+	    <a href="javascript:void(0)" class="dropbtn">HEEL ▼</a>
+	    <div class="dropdown-content">
+	      <a href="heel(미들힐).html">미들힐(1~7cm)</a>
+	      <a href="heel(하이힐).html">하이힐(8~9cm)</a>
+	      <a href="heel(킬힐).html">킬힐(10cm~)</a>
+	    </div>
+	 	<li><a href="sneakers.html">SNEAKERS</a></li>
+	</ul>
+
+	<hr><br>
+	<h1 class="animate" style = "position :absolute;	margin-top : 600px;
+	margin-left : 80%; font-weight: bold; color: blue;
+	transform: rotate(30deg);"
+	>!!JOINUS!!</h1><!--used animation and transformation-->
+	<p style ="text-align :center; font-size : 15pt ">NEW ARRIVALS (-10%)</p>
+	<div class="newspaper">
+		<figure style ="text-align:right" >
+			<a href="1.html">
+			<img class="hereimage" src="1.jpg" alt="러브썸 스웨이드 미들힐(5cm)"></a>
+			<figcaption >[미들힐]러브썸 스웨이드 (5cm)
+			<hr>
+			<s>34,900원</s>     31,400원<br>
+			220mm~255mm
+		</figcaption>
+		</figure><br>
+		<figure style ="text-align:right">
+			<a href="2.html">
+			<img class="hereimage" src="2.jpg" alt="윈트 슬링백 미들힐(7.5cm)"></a>
+			<figcaption>[미들힐]윈트 슬링백 (7.5cm)
+			<hr>
+			<s>31,900원</s>     28,700원<br>
+			225mm~250mm</figcaption>
+		</figure><br>
+		<figure style ="text-align:left">
+			<a href="3.html">
+			<img class="hereimage" src="3.jpg" alt="웨이스 메리제인 펌프스힐(8cm)"></a>
+			<figcaption >[하이힐]웨이스 메리제인 펌프스힐(8cm)
+			<hr>
+			<s>39,900원</s>     35,900원<br>
+			225mm~250mm
+		</figcaption>
+		</figure><br>
+		<figure style ="text-align:left">
+			<a href ="4.html">
+			<img class="hereimage" src="4.jpg" alt="바넨 천연가죽 스틸레토힐(9cm)"></a>
+			<figcaption>[하이힐]바넨 천연가죽 스틸레토힐(9cm)
+			<hr>
+			<s>37,900원</s>     34,100원<br>
+			225mm~250mm
+		</figcaption>
+		</figure>
+	</div>
+	<br style="font-size:30pt">
+	<footer style="background: linear-gradient(to bottom, #666699 0%, #337799 100%)"><br>
+		<p class="foot" style ="font-weight :bold;font-size : 15pt">COMPANY INFO</p><!--font weight-->
+		<p class="foot">COMPANY (주)YOURSHOES</p>
+		<p class="foot">COPYRIGHT&copy; 2017 YOURSHOES. ALL RIGHTS RESERVED</p><!--special character-->
+		<p class="foot">TEL : 02-6232-9454</p><br>
+	</footer>
+</body>
+</html>
